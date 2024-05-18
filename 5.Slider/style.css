@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+
+.container{
+    width: 20%;
+    margin: 10px auto;
+}
+
+.carousel{
+    border: 2px solid #ccc;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider{
+    height: 100%;
+    display: flex;
+    width: 400%;
+    border: 1px solid green;
+    /* transform: translate(-50%); */
+    transition: all 0.3s;
+}
+
+.slider section{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.controls .arrow span{
+    font-size: 40px;
+}
+
+.arrow.left{
+    left: 10px;
+    /* top: 32.5%; */
+}
+
+.arrow.right{
+    right: 10px;
+    /* top: 32.5%; */
+}
+
+.controls ul{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.controls ul li{
+    width: 14px;
+    height: 14px;
+    border: 2px solid #333;
+    border-radius: 50px;
+    margin:10px;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.controls ul li.selected{
+    background: transparent;
+}
